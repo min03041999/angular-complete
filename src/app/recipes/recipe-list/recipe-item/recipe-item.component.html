@@ -1,0 +1,14 @@
+<a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" [routerLink]="index" routerLinkActive="active" >
+  <div>
+    <h4 class="list-group-item-heading">
+      {{recipe.name}}
+    </h4>
+    <p class="list-group-item-next">
+      {{recipe.description}}
+    </p>
+  </div>
+  <span>
+    <img [src]="recipe.imagePath" alt="{{recipe.name}}"
+    style="max-height:75px">
+  </span>
+</a>
